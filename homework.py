@@ -12,6 +12,7 @@ def test_greeting():
     output = f"Привет, {name}! Тебе {age} лет."
     # Проверяем результат
     assert output == "Привет, Анна! Тебе 25 лет."
+    print(f"\n{output}")
 
 
 def test_rectangle():
@@ -28,6 +29,7 @@ def test_rectangle():
     # TODO сосчитайте площадь
     area = a * b
     assert area == 200
+    print(f"\nПериметр: {perimeter}, площадь: {area}")
 
 
 def test_circle():
@@ -42,6 +44,7 @@ def test_circle():
     # TODO сосчитайте длину окружности
     length = 2 * math.pi * r
     assert length == 144.51326206513048
+    print(f"\nДлина окружности: {length}, площадь круга: {area}")
 
 
 def test_random_list():
@@ -81,5 +84,6 @@ def test_dicts():
     # TODO создайте словарь
     d = {}
     d = dict(zip(first, second))
+    print(f"\n{d}")
     assert isinstance(d, dict)
     assert len(d) == 5
