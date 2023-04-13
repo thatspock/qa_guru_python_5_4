@@ -58,6 +58,7 @@ def test_random_list():
     l.sort()
     assert len(l) == 10
     assert l[0] < l[-1]
+    print(f"\n{l}")
 
 
 def test_unique_elements():
